@@ -1,0 +1,213 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="eng"></html>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=Poiret+One&family=Righteous&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<header id="header">
+        <div class="header-content">
+            <img id="header-img" src="https://static.vecteezy.com/system/resources/previews/008/124/077/non_2x/headphone-listening-music-with-tune-and-note-music-cartoon-icon-illustration-technology-art-icon-concept-isolated-premium-flat-cartoon-style-vector.jpg" alt="TuneWave Logo">
+            <h2 class="company-title">TuneWave</h2>
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <nav id="nav-bar">
+        <a class="nav-link" href="#Features"><span class="navhigh">Features</span></a>
+        <a class="nav-link" href="#PricingPlans"><span class="navhigh">Pricing Plans</span></a>
+        <a class="nav-link" href="#SignUp"><span class="navhigh">Sign Up</span></a>
+</nav>
+    </header>
+<section id="Features"><br><br>
+  <h2><span class="h2high">Features</span></h2><br><br>
+  <h3><span class="h3high">Personalized Playlists</span></h3><br>
+  <p>Your vibe, your tribe! Our app gets to know your musical soul, serving up playlists that match your mood, whether you're chillin', groovin', or rockin' out!</p><br>
+  <h3><span class="h3high">Endless Tunes</span></h3><br>
+  <p>Explore a universe of sound! From hidden gems to chart-toppers, our music library is so packed, you'll need a bigger playlist!</p><br>
+  <h3><span class="h3high">Offline Listening</span></h3><br>
+  <p>Music that moves with you! Download your faves and take your tunes on the go, no Wi-Fi required. Perfect for those no-signal zones!</p><br>
+  <h3><span class="h3high">Crystal-Clear Audio</span></h3><br>
+  <p>Hear every beat in glorious high-definition! Whether you're a casual listener or an audiophile, we’ve got the sound quality that makes your heart sing.</p><br>
+  <h3><span class="h3high">Check Out This Video!</span></h3><br>
+  <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/86D7AGm5sHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+<br><br><br>
+</section>
+<section id="PricingPlans"><br><br>
+  <h2><span class="h2high">Pricing Plans</span></h2><br><br>
+  <h3><span class="h3high">Free Flow</span></h3><br>
+  <h4>Price: $0/month</h4>
+  <p>Enjoy the basics! Stream your favorite tunes with ads, create playlists, and discover new music without spending a dime. Perfect for the casual listener who’s just here for the jams!</p><br>
+  <h3><span class="h3high">Groove On</span></h3><br>
+  <h4>Price: $9.99/month</h4>
+  <p>Level up your listening experience! Go ad-free, download tracks for offline jamming, and get high-quality audio. This plan is for those who need their music on-the-go and interruption-free!</p><br>
+  <h3><span class="h3high">Vibe Supreme</span></h3><br>
+  <h4>Price: $14.99/month</h4>
+  <p>Unlock the ultimate music experience! Enjoy all the perks of Groove On, plus exclusive access to early releases, live concert streams, and premium content. For the true music lover who wants it all!</p><br><br>
+</section>
+<section id="SignUp"><br><br>
+  <h2><span class="h2high">Join Now</span></h2>
+    <br><p id="text">Please fill out this form with the required information.</p>
+    <form id="form" method="post" action='https://www.freecodecamp.com/email-submit'>
+      <fieldset>
+        <label id="first" for="first-name">First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Email: <input id="email" name="email" type="email" placeholder="johndoe@gmail.com" required /></label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+        <label for="age">Age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Social Media</option>
+            <option value="2">Friend</option>
+            <option value="3">Website</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+</section>
+
+
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: urbanist;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;  background-color: white;
+color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+img {
+    height: 50px;
+}
+#nav-bar ul {
+    list-style: none;
+    display: flex;
+}
+#nav-bar ul li {
+    margin-left: 20px;
+}
+#nav-bar a {
+    color: black; text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+border-radius: 5px;
+}
+section {
+  scroll-margin-top: 150px;
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+input,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+input, textarea {
+  background-color:   white;
+;
+  border: 1px solid black;
+  color: black;
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #95D2B3;
+;
+  border-color: white;
+  min-width: 300px;
+}
+.inline{
+  display: inline; 
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+#first {
+  margin-top: 0;
+}
+#text {
+  position: relative;
+  top: 5;
+}
+p {
+  padding-left: 350px;
+  padding-right: 350px;
+}
+.h2high {
+  background-color: #95D2B3;
+  color: black;
+  font-weight: bold;
+  padding: 2px; 
+  border-radius: 3px;
+}
+.h3high {
+  background-color: #D8EFD3;
+  color: black;
+  font-weight: bold;
+  padding: 2px; 
+  border-radius: 3px;
+}
+.navhigh {
+  background-color: #D1E9F6;
+  color: black;
+  font-weight: bold;
+  padding: 2px; 
+  border-radius: 3px;
+}
+#Features {
+  background-color: #E5D4FF;
+}
+#PricingPlans {
+  background-color: #FFE5E5;
+}
+#SignUp {
+  background-color: #DEF5E5;
+}
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+** end of undefined **
+
